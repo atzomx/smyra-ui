@@ -1,17 +1,10 @@
 {
   "extends": "../../tsconfig",
   "compilerOptions": {
-    "allowJs": true,
-    "composite": true,
     "declaration": true,
-    "noEmit": false,
-    "emitDeclarationOnly": true,
-    "outDir": "build",
+    "outDir": "./build",
     "rootDir": "./src"
   },
-  "files": [
-      "src/index.ts"
-  ],
-  "include": ["./src/**/*.ts*"],
+  "include": ["./src/index.ts*"],
   "exclude": ["src/**/*.spec.ts*", "src/**/*.test.ts*"],
 }

@@ -1,7 +1,7 @@
 import { useCallback, useRef } from "react";
 
 const useDebounce = <T extends any[]>(
-  callback = (...args: T) => {},
+  callback = (..._args: T) => undefined,
   wait: number = 100
 ) => {
   const timerRef = useRef<number | NodeJS.Timeout>();

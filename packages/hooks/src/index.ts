@@ -1,2 +1,2 @@
 export * from "./useDebounce";
-export * from './useTimer'
+export * from "./useTimer";

@@ -1,10 +1,8 @@
-import MuiButton from '@mui/material/Button';
-import * as React from 'react';
+import * as React from "react";
+import MuiButton from "@mui/material/Button";
 
 const Button = () => {
-  return (
-    <MuiButton variant="contained">Hello World</MuiButton>
-  )
-}
+  return <MuiButton variant="contained">Hello World</MuiButton>;
+};
 
-export default Button
+export default Button;
