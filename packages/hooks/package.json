@@ -19,5 +19,6 @@
   "scripts": {
     "build": " yarn clean && tsc",
     "clean": "rimraf build/"
-  }
+  },
+  "gitHead": "3d6fa77e2da2a5d7b5eeffa84b041fc581021443"
 }
