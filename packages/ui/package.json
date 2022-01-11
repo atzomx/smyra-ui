@@ -4,14 +4,20 @@
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "SaulMoreyra <armhacam21@gmail.com>",
-  "license": "ISC",
   "main": "./src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smyradev/smyra-ui.git",
+    "directory": "packages/ui"
+  },
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "build": " yarn clean && tsc",
-    "clean": "rimraf build/"
+    "clean": "rimraf build/",
+    "release": "yarn build && npm publish build"
   },
   "peerDependencies": {
     "@emotion/react": "^11.5.0",
@@ -23,5 +29,5 @@
     "@emotion/styled": "^11.6.0",
     "@mui/material": "^5.2.8"
   },
-  "gitHead": "d41db57fabf966a0a6281fe03af9441e4616e753"
+  "gitHead": "7485fcf3c4f18e9fadec404c6c8e5a4b0abc6c85"
 }
