@@ -6,7 +6,8 @@
   "scripts": {
     "build": "lerna run --parallel --scope \"@smyradev/*\" build",
     "lint": "run-p -c lint:*",
-    "lint:ts": "tslint 'packages/**/*.ts{,x}' --exclude 'packages/**/build/**'"
+    "lint:ts": "tslint 'packages/**/*.ts{,x}' --exclude 'packages/**/build/**'",
+    "release:publish": "lerna publish"
   },
   "workspaces": [
     "packages/*"
