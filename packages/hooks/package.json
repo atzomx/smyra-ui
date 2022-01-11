@@ -20,5 +20,5 @@
     "build": " yarn clean && tsc",
     "clean": "rimraf build/"
   },
-  "gitHead": "f7c076400558bab96ce226a51130fda6edc6986c"
+  "gitHead": "d41db57fabf966a0a6281fe03af9441e4616e753"
 }
