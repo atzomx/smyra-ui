@@ -1,6 +1,6 @@
 {
   "name": "@smyradev/ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "SaulMoreyra <armhacam21@gmail.com>",
@@ -15,12 +15,12 @@
   },
   "peerDependencies": {
     "@emotion/react": "^11.5.0",
-    "@emotion/styled": "^11.3.0",    
+    "@emotion/styled": "^11.3.0",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@mui/material": "^5.2.8",
     "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0"
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.8"
   }
 }
