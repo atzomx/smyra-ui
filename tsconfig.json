@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es2020", "dom"],
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "noErrorTruncation": false,
+    "allowJs": true,
+    
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "paths": {
+      "@smyradev/ui": ["./packages/ui/src"],
+      "@smyradev/ui/*": ["./packages/hooks/src/*"],
+    },
+  },
+  "types": ["node"],
+  "exclude": ["**/.*/", "**/build", "**/node_modules", "docs/export"]
+}

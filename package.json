@@ -1,0 +1,23 @@
+{
+  "name": "lerna-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "lerna run --parallel --scope \"@smyradev/*\" build"
+  },
+  "keywords": [],
+  "author": "SaulMoreyra",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "typescript": "^4.5.4"
+  },
+  "hoist": true,
+  "stream": true,
+  "bootstrap": {
+    "npmClientArgs": [
+      "--no-package-lock"
+    ]
+  }
+}
