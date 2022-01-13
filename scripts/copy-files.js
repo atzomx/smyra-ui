@@ -1,4 +1,6 @@
 /* eslint-disable no-console */
+/* this code is property of material-ui */
+
 const path = require("path");
 const fse = require("fs-extra");
 const glob = require("fast-glob");
