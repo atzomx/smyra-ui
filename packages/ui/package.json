@@ -1,6 +1,6 @@
 {
   "name": "@smyradev/ui",
-  "version": "1.0.13-alpha.0",
+  "version": "1.0.11-alpha.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "SaulMoreyra <armhacam21@gmail.com>",
@@ -19,13 +19,13 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "build": " yarn clean && tsc && yarn build:copy-files",
-    "build:copy-files": "node ../../scripts/copy-files.js",
+    "build": " yarn clean && tsc",
+    "copy-files": "node ../../scripts/copy-files.js",
     "clean": "rimraf build/",
-    "release": "lerna publish build",
-    "prepublishOnly": "yarn build && cp -r ./build/* . && rm -rf ./build",
-    "postpublish": "yarn bundle:revert",
-    "bunldle:revert": "git clean -fd"
+    "release": "lerna publish",
+    "prepublishOnly": "yarn run build && cp -r ./build/* . && yarn copy-files  && rm -rf ./build",
+    "postpublish": "yarn revert:bundle",
+    "revert:bundle": "git clean -fd"
   },
   "peerDependencies": {
     "@emotion/react": "^11.5.0",
@@ -37,5 +37,5 @@
     "@emotion/styled": "^11.6.0",
     "@mui/material": "^5.2.8"
   },
-  "gitHead": "117a3605e7239e3b2fe3e7ed0cf95d3a1419d1f4"
+  "gitHead": "2d84ed30226bcd30d6dcba63d87669572d341116"
 }

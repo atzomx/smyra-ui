@@ -20,12 +20,13 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "build": " yarn clean && tsc yarn build:copy-files",
-    "build:copy-files": "node ../../scripts/copy-files.js",
+    "build": " yarn clean && tsc",
+    "copy-files": "node ../../scripts/copy-files.js",
     "clean": "rimraf build/",
-    "release": "lerna publish build",
-    "prepublishOnly": "yarn build && cp -r ./build/* . && rm -rf ./build",
-    "postpublish": "git clean -fd"
+    "release": "lerna publish",
+    "prepublishOnly": "yarn run build && yarn copy-files && cp -r ./build/* .  && rm -rf ./build",
+    "postpublish": "yarn revert:bundle",
+    "revert:bundle": "git clean -fd"
   },
   "gitHead": "117a3605e7239e3b2fe3e7ed0cf95d3a1419d1f4"
 }
