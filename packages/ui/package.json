@@ -11,8 +11,12 @@
     "directory": "packages/ui"
   },
   "license": "MIT",
+  "sideEffects": false,
   "publishConfig": {
     "access": "public"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   },
   "scripts": {
     "build": " yarn clean && tsc && yarn build:copy-files",
