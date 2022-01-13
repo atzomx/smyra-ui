@@ -9,7 +9,9 @@
     "url": "https://github.com/smyradev/smyra-ui.git",
     "directory": "packages/hooks"
   },
-  "main": "src/index.ts",
+  "module": "index.js",
+  "main": "index.js",
+  "types": "index.d.ts",
   "publishConfig": {
     "access": "public"
   },
@@ -24,6 +26,6 @@
     "release": "lerna publish build",
     "prepublishOnly": "yarn run build && cp -r ./build/* . && rm -rf ./build",
     "postpublish": "git clean -fd"
-  },
+  },  
   "gitHead": "117a3605e7239e3b2fe3e7ed0cf95d3a1419d1f4"
 }
