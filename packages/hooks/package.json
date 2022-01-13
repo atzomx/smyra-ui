@@ -1,6 +1,6 @@
 {
   "name": "@smyradev/hooks",
-  "version": "1.0.11-alpha.0",
+  "version": "1.0.12-alpha.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "SaulMoreyra <armhacam21@gmail.com>",
@@ -26,6 +26,6 @@
     "release": "lerna publish build",
     "prepublishOnly": "yarn run build && cp -r ./build/* . && rm -rf ./build",
     "postpublish": "git clean -fd"
-  },  
+  },
   "gitHead": "117a3605e7239e3b2fe3e7ed0cf95d3a1419d1f4"
 }
