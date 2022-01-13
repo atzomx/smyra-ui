@@ -15,7 +15,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": " yarn clean && tsc",
+    "build": " yarn clean && tsc && yarn build:copy-files",
+    "build:copy-files": "node ../../scripts/copy-files.js",
     "clean": "rimraf build/",
     "release": "yarn build && npm publish build"
   },

@@ -1264,11 +1264,11 @@
 
 "@smyradev/hooks@file:C:\\Users\\drone\\Documents\\Repositories\\React\\lerna-components\\packages\\hooks":
   "resolved" "file:packages/hooks"
-  "version" "1.0.0"
+  "version" "1.0.5-alpha.0"
 
 "@smyradev/ui@file:C:\\Users\\drone\\Documents\\Repositories\\React\\lerna-components\\packages\\ui":
   "resolved" "file:packages/ui"
-  "version" "1.0.0"
+  "version" "1.0.5-alpha.0"
 
 "@tootallnate/once@1":
   "integrity" "sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw=="
@@ -2278,7 +2278,7 @@
   "resolved" "https://registry.npmjs.org/fast-diff/-/fast-diff-1.2.0.tgz"
   "version" "1.2.0"
 
-"fast-glob@^3.2.9":
+"fast-glob@^3.2.10", "fast-glob@^3.2.9":
   "integrity" "sha512-s9nFhFnvR63wls6/kM88kQqDhMu0AfdjqouE2l5GVQPbqLgyFjjU5ry/r2yKsJxpb9Py1EYNqieFrmMaX4v++A=="
   "resolved" "https://registry.npmjs.org/fast-glob/-/fast-glob-3.2.10.tgz"
   "version" "3.2.10"
@@ -2353,6 +2353,15 @@
     "asynckit" "^0.4.0"
     "combined-stream" "^1.0.6"
     "mime-types" "^2.1.12"
+
+"fs-extra@^10.0.0":
+  "integrity" "sha512-C5owb14u9eJwizKGdchcDUQeFtlSHHthBk8pbX9Vc1PFZrLombudjDnNns88aYslCyF6IY5SUw3Roz6xShcEIQ=="
+  "resolved" "https://registry.npmjs.org/fs-extra/-/fs-extra-10.0.0.tgz"
+  "version" "10.0.0"
+  dependencies:
+    "graceful-fs" "^4.2.0"
+    "jsonfile" "^6.0.1"
+    "universalify" "^2.0.0"
 
 "fs-extra@^9.1.0":
   "integrity" "sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ=="
