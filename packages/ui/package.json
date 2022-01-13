@@ -19,12 +19,13 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "build": " yarn clean && tsc",
+    "build": " yarn clean && tsc && yarn build:copy-files",
     "build:copy-files": "node ../../scripts/copy-files.js",
     "clean": "rimraf build/",
-    "release": "lerna publish",
-    "prepublishOnly": "yarn run build && cp -r ./build/* . && rm -rf ./build",
-    "postpublish": "git clean -fd"
+    "release": "lerna publish build",
+    "prepublishOnly": "yarn build && cp -r ./build/* . && rm -rf ./build",
+    "postpublish": "yarn bundle:revert",
+    "bunldle:revert": "git clean -fd"
   },
   "peerDependencies": {
     "@emotion/react": "^11.5.0",
