@@ -9,13 +9,6 @@ const packagePath = process.cwd();
 const buildPath = path.join(packagePath, "./build");
 const srcPath = path.join(packagePath, "./src");
 
-async function includeFileInBuild(file) {
-  const sourcePath = path.resolve(packagePath, file);
-  const targetPath = path.resolve(buildPath, path.basename(file));
-  await fse.copy(sourcePath, targetPath);
-  console.log(`Copied ${sourcePath} to ${targetPath}`);
-}
-
 async function typescriptCopy({ from, to }) {
   if (!(await fse.pathExists(to))) {
     console.warn(`path ${to} does not exists`);
@@ -64,11 +57,6 @@ async function createPackageFile() {
 async function run() {
   try {
     await createPackageFile();
-
-    await Promise.all(
-      ["../../README.md", "../../LICENSE"].map(file => includeFileInBuild(file))
-    );
-
     // // TypeScript
     await typescriptCopy({ from: srcPath, to: buildPath });
   } catch (err) {

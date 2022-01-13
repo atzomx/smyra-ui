@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepublishOnly": "lerna run --parallel --scope \"@smyradev/*\" prepublishOnly",
+    "prepublishOnly": "lerna run --scope \"@smyradev/*\" prepublishOnly",
     "postpublish": "git clean -fd",
-    "build": "lerna run --parallel --scope \"@smyradev/*\" build",
+    "build": "lerna run --scope \"@smyradev/*\" build",
     "lint": "run-p -c lint:*",
     "lint:ts": "tslint 'packages/**/*.ts{,x}' --exclude 'packages/**/build/**'",
     "release:publish": "lerna publish"
