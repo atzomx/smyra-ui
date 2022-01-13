@@ -18,10 +18,10 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "build": " yarn clean && tsc && yarn build:copy-files",
+    "build": " yarn clean && tsc",
     "build:copy-files": "node ../../scripts/copy-files.js",
     "clean": "rimraf build/",
-    "release": "yarn build && npm publish build",
+    "release": "lerna publish build",
     "prepublishOnly": "yarn run build && cp -r ./build/* . && rm -rf ./build",
     "postpublish": "git clean -fd"
   },
