@@ -23,7 +23,7 @@
     "copy-files": "node ../../scripts/copy-files.js",
     "clean": "rimraf build/",
     "release": "lerna publish",
-    "prepublishOnly": "yarn run build && cp -r ./build/* . && yarn copy-files  && rm -rf ./build",
+    "prepublishOnly": "yarn run build && yarn copy-files && cp -r ./build/* .  && rm -rf ./build",
     "postpublish": "yarn revert:bundle",
     "revert:bundle": "git clean -fd"
   },
