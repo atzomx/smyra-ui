@@ -3,6 +3,7 @@ import MuiButton from "@mui/material/Button";
 
 interface ButtonProps {
   message: string;
+  color?: string;
 }
 
 const Button = (props: ButtonProps) => {
