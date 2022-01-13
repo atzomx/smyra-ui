@@ -1,8 +1,12 @@
 import * as React from "react";
 import MuiButton from "@mui/material/Button";
 
-const Button = () => {
-  return <MuiButton variant="contained">Hello World</MuiButton>;
+interface ButtonProps {
+  message: string;
+}
+
+const Button = (props: ButtonProps) => {
+  return <MuiButton variant="contained">{props.message}</MuiButton>;
 };
 
 export default Button;
