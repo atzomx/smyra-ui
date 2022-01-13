@@ -23,5 +23,5 @@
     "clean": "rimraf build/",
     "release": "yarn build && npm publish build"
   },
-  "gitHead": "7485fcf3c4f18e9fadec404c6c8e5a4b0abc6c85"
+  "gitHead": "a987da7127c8487b44afeb811343158c0b411ba7"
 }
