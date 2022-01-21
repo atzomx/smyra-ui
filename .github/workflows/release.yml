@@ -6,9 +6,9 @@ name: Semantic Release
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -32,7 +32,12 @@ jobs:
       - name: Build App
         run: npm build
 
-      - name: Semantic Release
+      - name: Loggin npm
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npm run release:publish 
+        run: npm login
+
+      - name: Lerna Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npm run release:publish
