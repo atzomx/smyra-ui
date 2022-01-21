@@ -32,12 +32,8 @@ jobs:
       - name: Build App
         run: npm build
 
-      - name: Loggin npm
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npm login
-
       - name: Lerna Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npm run release:publish
+        run: npm config set '//npm.pkg.github.com/:_authToken' "${GH_TOKEN}"
+          npm run release:publish
