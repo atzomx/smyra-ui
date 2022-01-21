@@ -29,11 +29,11 @@
     "url": "https://github.com/smyradev/smyra-ui.git"
   },
   "scripts": {
-    "build": " yarn clean && tsc",
+    "build": " npm run clean && tsc",
     "clean": "rimraf build/",
     "copy-files": "node ../../scripts/copy-files.js",
-    "postpublish": "yarn revert:bundle",
-    "prepublishOnly": "yarn run build && yarn copy-files && cp -r ./build/* .  && rm -rf ./build",
+    "postpublish": "npm run revert:bundle",
+    "prepublishOnly": "npm run build && npm run copy-files && cp -r ./build/* .  && rm -rf ./build",
     "release": "lerna publish",
     "revert:bundle": "git clean -fd"
   },
